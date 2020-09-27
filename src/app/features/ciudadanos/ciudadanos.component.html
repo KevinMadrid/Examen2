@@ -1,0 +1,36 @@
+<h1>Listado de Ciudadanos</h1>
+<button type ="button" class="btn btn-success mb-2"(click)="crearCiudadano()" ><i class="fas fa-plus"></i>
+    Crear</button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Primer Nombre</th>
+            <th scope="col">Segundo Nombre</th>
+            <th scope="col">Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let ciudadano of ciudadanos">
+            <th scope="row">{{ciudadano.id}}</th>
+            <td>{{ciudadano.primer_nombre}}</td>
+            <td>{{ciudadano.segundo_nombre}}</td>
+            <td>{{ciudadano.primer_apellido}}</td>
+            <td>{{ciudadano.segundo_apellido}}</td>
+            <td>{{ciudadano.numero_telefono}}</td>
+            <td>{{ciudadano.ciudad.nombre_ciudad}}</td>
+            <td>
+                <div class="btn-group" role="group">
+                <button type="button" class="btn btn-info" (click)="editarCiudadano(ciudadano.id)">
+                <i class="fas fa-pencil-alt"></i></button>
+                <button type="button" class="btn btn-danger" (click)="eliminarCiudadano(ciudadano.id)"> 
+                <i class="fas fa-trash-alt"></i></button>       
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

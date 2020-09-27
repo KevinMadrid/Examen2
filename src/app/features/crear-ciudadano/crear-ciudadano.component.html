@@ -1,0 +1,37 @@
+<h2>Crear Ciudadano</h2>
+<form>
+    <div class="form-group">
+        <label for="primer_nombreCiudadano">Primer Nombre</label>
+        <input name="nombre" type="text" class="form-control" id="primer_nombreCiudadano"
+        placeholder="Ingrese Primer Nombre" [(ngModel)]="ciudadano.primer_nombre">
+    </div>
+    <div class="form-group">
+        <label for="segundo_nombreCiudadano">Segundo Nombre</label>
+        <input name="nombre" type="text" class="form-control" id="segundo_nombreCiudadano"
+        placeholder="Ingrese Segundo Nombre" [(ngModel)]="ciudadano.segundo_nombre">
+    </div>
+    <div class="form-group">
+        <label for="primer_apellidoCiudadano">Primer Apellido</label>
+        <input name="nombre" type="text" class="form-control" id="primer_apellidoCiudadano"
+        placeholder="Ingrese Primer Apellido" [(ngModel)]="ciudadano.primer_apellido">
+    </div>
+    <div class="form-group">
+        <label for="segundo_apellidoCiudadano">Segundo Apellido</label>
+        <input name="nombre" type="text" class="form-control" id="segundo_apellidoCiudadano"
+        placeholder="Ingrese Segundo Apellido" [(ngModel)]="ciudadano.segundo_apellido">
+    </div>
+    <div class="form-group">
+        <label for="numero_telefonoCiudadano">Numero de Telefono</label>
+        <input name="nombre" type="text" class="form-control" id="numero_telefonoCiudadano"
+        placeholder="Ingrese el Numero de Telefono" [(ngModel)]="ciudadano.numero_telefono">
+    </div>
+    <div class="form-group">
+        <label for="ciudadControlSelect">Selecionar la Ciudad</label>
+        <select name="nombreCurso" class="form-control" id="ciudadesControlSelect" [(ngModel)]="ciudadano.ciudadid">
+        <option *ngFor="let ciudad of ciudades" [value]="ciudad.id">{{ciudad.nombre_ciudad}}</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="crearCiudadano()">Guardar</button>
+    <button type="submit" class="btn btn-ligth" (click)="cancelar()">Cancelar</button>
+</form>
+
