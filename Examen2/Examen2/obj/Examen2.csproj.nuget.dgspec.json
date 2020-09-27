@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\Examen2\\Examen2\\Examen2.csproj": {}
+    "C:\\Users\\user\\Desktop\\Examen\\Examen2\\Examen2\\Examen2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\Examen2\\Examen2\\Examen2.csproj": {
+    "C:\\Users\\user\\Desktop\\Examen\\Examen2\\Examen2\\Examen2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\Examen2\\Examen2\\Examen2.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Examen\\Examen2\\Examen2\\Examen2.csproj",
         "projectName": "Examen2",
-        "projectPath": "C:\\Users\\user\\source\\repos\\Examen2\\Examen2\\Examen2.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\Examen\\Examen2\\Examen2\\Examen2.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\Examen2\\Examen2\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Examen\\Examen2\\Examen2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
